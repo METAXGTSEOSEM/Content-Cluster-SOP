@@ -196,21 +196,61 @@
 ## 📊 执行流程图
 
 ```mermaid
-graph TD
-    A[Step 1 调研集群标题] --> B[Step 2 逆向大纲调研]
-    B --> C[Step 3 关键词挖掘]
-    C --> D[Step 4 生成 EEAT 素材]
-    D --> E[Step 5 锁定内/外链]
-    E --> F[Step 6 AI 预热大纲]
-    F --> G[Step 7 设置布局指令]
-    G --> H[Step 8 GEO 文章生成]
-    H --> I[Step 9 预览质检验收]
-    I --> J[Step 10 配图与链接补全]
-    J --> K[Step 11 Schema 标记注入]
-    K --> L[Step 12 录入资产表归档]
+flowchart TD
+    subgraph PhaseA["📂 Phase A: 策略规划 (Research & Planning)"]
+        A["🔍 Step 1<br/>调研集群标题"]
+        B["📋 Step 2<br/>逆向大纲调研"]
+        C["🔑 Step 3<br/>关键词挖掘"]
+        D["✍️ Step 4<br/>生成 EEAT 素材"]
+        A --> B --> C --> D
+        style A fill:#E8F4F8,stroke:#0066CC,stroke-width:2px,color:#000
+        style B fill:#E8F4F8,stroke:#0066CC,stroke-width:2px,color:#000
+        style C fill:#E8F4F8,stroke:#0066CC,stroke-width:2px,color:#000
+        style D fill:#E8F4F8,stroke:#0066CC,stroke-width:2px,color:#000
+    end
+    
+    subgraph PhaseB["✍️ Phase B: 创作执行 (Content Creation)"]
+        E["🔗 Step 5<br/>锁定内/外链"]
+        F["🤖 Step 6<br/>AI 预热大纲"]
+        G["📐 Step 7<br/>设置布局指令"]
+        H["📝 Step 8<br/>GEO 文章生成"]
+        E --> F --> G --> H
+        style E fill:#E8F5E9,stroke:#00AA00,stroke-width:2px,color:#000
+        style F fill:#E8F5E9,stroke:#00AA00,stroke-width:2px,color:#000
+        style G fill:#E8F5E9,stroke:#00AA00,stroke-width:2px,color:#000
+        style H fill:#E8F5E9,stroke:#00AA00,stroke-width:2px,color:#000
+    end
+    
+    subgraph PhaseC["🚀 Phase C: 优化发布 (Optimization & Publishing)"]
+        I["✅ Step 9<br/>质量验收检查"]
+        J["🖼️ Step 10<br/>配图与链接补全"]
+        K["📊 Step 11<br/>Schema 标记注入"]
+        L["💾 Step 12<br/>资产录入归档"]
+        I --> J --> K --> L
+        style I fill:#FFF3E0,stroke:#FF9800,stroke-width:2px,color:#000
+        style J fill:#FFF3E0,stroke:#FF9800,stroke-width:2px,color:#000
+        style K fill:#FFF3E0,stroke:#FF9800,stroke-width:2px,color:#000
+        style L fill:#FFF3E0,stroke:#FF9800,stroke-width:2px,color:#000
+    end
+    
+    D --> E
+    H --> I
+    L --> End["🎉 发布完成"]
+    style End fill:#C8E6C9,stroke:#00AA00,stroke-width:3px,color:#000
 ```
 
 ---
 
-## 📄 许可证 (License)
+## � 执行要点总结
+
+| 阶段 | 核心任务 | 时间预算 | 关键交付物 |
+| :--- | :--- | :--- | :--- |
+| **📂 Phase A** | 研究与规划 | 2-3 天 | 标题清单、大纲、关键词表、EEAT 素材 |
+| **✍️ Phase B** | 内容创作 | 3-5 天 | 完整文章、链接布局、GEO 摘要 |
+| **🚀 Phase C** | 优化发布 | 1-2 天 | Schema 代码、配图、最终版本、录入表 |
+| **总计** | 端到端执行 | **6-10 天** | **可在 GSC 中追踪的高质量资产** |
+
+---
+
+## �📄 许可证 (License)
 本项目基于 MIT License 开源，请随意在您的个人或商业项目中参考和使用本资料库。
