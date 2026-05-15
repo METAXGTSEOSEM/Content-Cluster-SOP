@@ -182,9 +182,20 @@
     "logo": { "@type": "ImageObject", "url": "[Logo URL]" }
   }
 }
-<h2 id="step-12">Step 12：资产录入归档</h2>
-目标：将文章关键信息录入追踪表，形成可复查的内容资产。
-使用 templates/keyword-record-template.csv 记录：最终标题、核心词、搜索量、内/外链 URL、Schema 类型及 GSC 收录状态。
+```
+
+---
+
+## Step 12：资产录入归档
+**目标**：将文章关键信息录入追踪表，形成可复查的内容资产。
+
+使用 `templates/keyword-record-template.csv` 记录：最终标题、核心词、搜索量、内/外链 URL、Schema 类型及 GSC 收录状态。
+
+---
+
+## 📊 执行流程图
+
+```mermaid
 graph TD
     A[Step 1 调研集群标题] --> B[Step 2 逆向大纲调研]
     B --> C[Step 3 关键词挖掘]
@@ -197,5 +208,9 @@ graph TD
     I --> J[Step 10 配图与链接补全]
     J --> K[Step 11 Schema 标记注入]
     K --> L[Step 12 录入资产表归档]
-📄 许可证 (License)
+```
+
+---
+
+## 📄 许可证 (License)
 本项目基于 MIT License 开源，请随意在您的个人或商业项目中参考和使用本资料库。
